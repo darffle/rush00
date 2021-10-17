@@ -6,14 +6,14 @@
 /*   By: xbaudhui <xbaudhui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 21:54:51 by xbaudhui          #+#    #+#             */
-/*   Updated: 2021/10/16 13:24:19 by xbaudhui         ###   ########.fr       */
+/*   Updated: 2021/10/17 17:41:34 by xbaudhui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	rush(int x, int y);
 
 int	main(void)
-{
-	rush(5, 3);
+{	
+	rush(1, 5);
 	return (0);
 }

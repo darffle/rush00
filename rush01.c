@@ -6,7 +6,7 @@
 /*   By: xbaudhui <xbaudhui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 21:58:25 by xbaudhui          #+#    #+#             */
-/*   Updated: 2021/10/16 13:29:14 by xbaudhui         ###   ########.fr       */
+/*   Updated: 2021/10/17 17:33:13 by xbaudhui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,11 @@ void	fct_1(int x)
 		ft_putchar(f1);
 		x--;
 	}
-	f1 = 92;
-	ft_putchar(f1);
+	if (x != 0)
+	{
+		f1 = '\\';
+		ft_putchar(f1);
+	}
 	ft_putchar('\n');
 }
 
@@ -43,8 +46,11 @@ void	fct_2(int x)
 		ft_putchar(f2);
 		x--;
 	}
-	f2 = '*';
-	ft_putchar(f2);
+	if (x != 0)
+	{
+		f2 = '*';
+		ft_putchar(f2);
+	}
 	ft_putchar('\n');
 }
 
@@ -52,7 +58,7 @@ void	fct_3(int x)
 {
 	char	f3;
 
-	f3 = 92;
+	f3 = '\\';
 	ft_putchar(f3);
 	x--;
 	while (x > 1)
@@ -61,8 +67,11 @@ void	fct_3(int x)
 		ft_putchar(f3);
 		x--;
 	}
-	f3 = '/';
-	ft_putchar(f3);
+	if (x != 0)
+	{
+		f3 = '/';
+		ft_putchar(f3);
+	}
 	ft_putchar('\n');
 }
 
@@ -77,6 +86,7 @@ void	rush(int x, int y)
 			fct_2(x);
 			y--;
 		}
-		fct_3(x);
+		if (y != 0)
+			fct_3(x);
 	}			
 }
